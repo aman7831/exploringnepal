@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/script.js"></script>
+
+    <link rel="shortcut icon" href="img/nepal.png">
+
+    <title>EXPLORING NEPAL</title>
+</head>
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="img/video.mp4" type="video/mp4">
+    </video>
+    
+    <div class="content">
+        <nav class="navbar">
+            <span class="openslide">
+                <a href="#" onclick="opensidemenu()">
+                        <i class="fas fa-bars"><span style="margin-left: 20px">Menu</span></i>
+                </a>
+            </span>
+        </nav>
+        <div id="side-menu" class="side-nav">
+            <a href="#" class="btn-close" onclick="closesidemenu()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="festivals.html">Festivals</a>
+            <a href="#">Blog</a>
+            <a href="#">Gallery</a>
+            <a href="#">Contact</a>
+        </div>
+        <h1>NEPLEASE</h1><h2>FESTIVALS</h2>
+        <p>Nepal is a country which encloses varied geography, wealthy bio-diversity and even more diverse culture.<br>
+            Every community follows individual customs, passed down from their ancestors.</p>
+        <button id="myBtn" onclick="myFunction()">PAUSE</button>
+        <button id="myBtn1">READ MORE</button>
+        <div class="head">
+            <h3><span style="color: white">UPCOMMING</span> EVENT DATES AND IT's DETAILS</h3>
+        <div class="container-fluid">  
+        <div class="row">
+            <div class="col-sm-6">
+                 <img src="img/janayepurnima.jpg" style="width: 100%">
+            </div>
+            <div class="col-sm-6">
+            <h5>JANAI PURNIMA</h5>
+            <h6>Date: 22 August 2021</h6>
+            <p>Janai Purnima is one of the most sacred and important festivals of Hindu religion. The festival celebrates the bond of pureness and security. Janai means holy thread and Purnima is the full moon. On this day, Hindu Nepalese men of Brahmin and Chhetri group perform their annual ritual of changing Janai.</p>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-sm-6">
+                  <h5>DASHAIN</h5>
+                  <h6>Date: 15 October, 2021</h6>
+                  <p>Dashain, also Bijayā Daśamī is a festival of Nepal. It is also celebrated in several parts of India, and is called Dashera. Dashain is biggest festival in Nepal along with Tihar Dashain is celebrated by the Buddhists, Hindus, and Kirats of Nepal and the ethnic Nepali speaking Indian Gorkhas of Darjeeling hills, Sikkim, Assam and other North-Eastern states of India and among the Lhotshampa of Bhutan and the Burmese Gurkhas of Myanmar</p>
+                    </div>  
+            <div class="col-sm-6">
+                   <img src="img/dashain.jpg" style="width: 100%">
+              </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4">
+              <h5>More Events</h5>
+              <h6>Teej</h6>
+              <h6>Tihar</h6>
+              <button id="myBtn2">DIG MORE</button>
+                  </div>  
+          <div class="col-sm-4">
+              <h5>WELOCME TO NEPAL</h5>
+                <h6>COUNTRY WITH COLLECTION OF FESTIVALS</h6>
+                <button id="myBtn2">DIG MORE</button>
+            </div>
+            <div class="col-sm-4">               
+                <div class="myheader">
+                    <div class="social">
+                            <div class="social-networks">
+                               <h6><a href="#" class="twitter"><i class="fa fa-twitter"> <span style="font-family: verdana">TWITTER</span></i></a></h6>
+                              <h6><a href="#" class="facebook"><i class="fa fa-facebook"> <span style="font-family: verdana">FACEBOOK</span></i></a></h6>         
+                              <h6><a href="#" class="youtube"><i class="fa fa-youtube"> <span style="font-family: verdana">YOUTUBE</span></i></a></h6>
+                              <button id="myBtn2">ABOUT US</button>                                                      
+            </div>
+              </div>
+              </div>
+          </div>
+        </div>
+    </div>
+<script>
+      var video = document.getElementById("myVideo");
+      var btn = document.getElementById("myBtn");
+      
+      function myFunction() {
+        if (video.paused) {
+          video.play();
+          btn.innerHTML = "Pause";
+        } else {
+          video.pause();
+          btn.innerHTML = "Play";
+        }
+      }
+</script>
+</body>
+</html>
